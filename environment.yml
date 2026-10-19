@@ -1,0 +1,34 @@
+# Środowisko do laboratoriów GSN.
+# Utworzenie:   conda env create -f environment.yml
+# Aktywacja:    conda activate gsn
+name: gsn
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.14
+  - pip
+  - pip:
+      # obliczenia i dane
+      - numpy
+      - pandas
+      - scikit-learn
+      - scikit-image
+      # wizualizacja
+      - matplotlib
+      - seaborn
+      # obrazy i rastry
+      - opencv-python
+      - pillow
+      - rasterio
+      - albumentations
+      # sieci neuronowe (wersja CPU; wariant GPU - patrz instrukcja)
+      - torch
+      - torchvision
+      - torchsummary
+      # eksperymenty i detekcja (L4, YOLO)
+      - wandb
+      - ultralytics
+      # notebooki
+      - jupyterlab
+      - ipykernel

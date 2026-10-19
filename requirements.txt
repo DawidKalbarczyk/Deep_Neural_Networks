@@ -1,0 +1,17 @@
+numpy
+pandas
+scikit-learn
+scikit-image
+matplotlib
+seaborn
+opencv-python
+pillow
+rasterio
+albumentations
+torch
+torchvision
+torchsummary
+wandb
+ultralytics
+jupyterlab
+ipykernel
